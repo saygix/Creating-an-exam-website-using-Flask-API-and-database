@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="{{ url_for('submit_quiz') }}" method="post">
+        {% for question in questions %}
+            <fieldset>
+                <legend>{{ question.question_text }}</legend>
+                <label>
+                    <input type="radio" name="q{{ question.id }}" value="A" required>
+                    {{ question.option_a }}
+                </label><br>
+                <label>
+                    <input type="radio" name="q{{ question.id }}" value="B">
+                    {{ question.option_b }}
+                </label><br>
+                <label>
+                    <input type="radio" name="q{{ question.id }}" value="C">
+                    {{ question.option_c }}
+                </label><br>
+                <label>
+                    <input type="radio" name="q{{ question.id }}" value="D">
+                    {{ question.option_d }}
+                </label>
+            </fieldset>
+        {% endfor %}
+        <button type="submit">SEND</button>
+    </form>
+{% endblock %}
