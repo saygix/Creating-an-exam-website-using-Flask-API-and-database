@@ -143,3 +143,4 @@ unzip dosya_adi.zip
 Katkıda bulunmak için lütfen bir pull request gönderin. Katkıda bulunmak isteyenler için kurulum ve test sürecini kolaylaştırmak amacıyla daha fazla bilgi sağlanabilir.
 
 ---
+> **Yayınlanan siteyi ziyaret edin**: [https://saygix.pythonanywhere.com](https://saygix.pythonanywhere.com) 
