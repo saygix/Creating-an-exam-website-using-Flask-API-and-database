@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Quiz Website</h1>
+        <div class="score">
+            {% if session.get('highest_score') %}
+                Highest Score: {{ session['highest_score'] }}
+            {% else %}
+                Highest Score: 0
+            {% endif %}
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+        Developed by AYŞEGÜL SAYGI
+    </footer>
+</body>
+</html>
