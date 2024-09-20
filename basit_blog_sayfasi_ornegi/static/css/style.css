@@ -1,0 +1,84 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #333333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.blog-post {
+    background-color: white;
+    padding: 20px;
+    margin: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-post p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+.comments button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.comments button:hover {
+    background-color: #555;
+}
+
+.social-share {
+    margin-top: 20px;
+}
+
+.social-share h2 {
+    font-size: 1.2em;
+}
+
+.social-share a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
