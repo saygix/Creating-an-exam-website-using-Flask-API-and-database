@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.title }}</title>
+
+    <!-- Google Fonts kullanılarak Montserrat fontu ekleniyor -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Özel stil dosyası -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>{{ post.title }}</h1>
+        </div>
+    </header>
+
+    <section class="blog-post container">
+        <img src="{{ post.image }}" alt="{{ post.title }}">
+        <p>{{ post.content }}</p>
+        <!-- Yorum ve paylaşım bölümü -->
+        <div class="comments">
+            <h2>Comments</h2>
+            <form action="/add_comment" method="post">
+                <textarea name="comment" rows="4" placeholder="Add a comment..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <!-- Burada yorumları listeleyebilirsiniz -->
+        </div>
+        <div class="social-share">
+            <h2>Share this post</h2>
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Stylish Blog | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
